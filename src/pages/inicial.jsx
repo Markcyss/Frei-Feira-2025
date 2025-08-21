@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './inicial.sass'
+import { Link } from 'react-router'
 import freilogo from '../assets/freilogo.webp'
 import feiralogo from '../assets/feiralogo.webp'
 import frei from '../assets/frei.png'
@@ -22,10 +23,12 @@ function App() {
 
             <div className='cabecalho'>
 
-                <img 
-                    src={freilogo}
-                    height='50px'
-                />
+                <Link to={'./'}>
+                    <img 
+                        src={freilogo}
+                        height='50px'
+                    />
+                </Link>
 
                 <h2>5° Edição Feira de Profissões Instituto Nossa Senhora de Fátima</h2>
 
@@ -55,7 +58,9 @@ function App() {
                     <p>Workshops, Networking, Brindes e muito mais!!</p>
                     <p>Venha conhecer nossa Feira de Profissões</p>
 
-                    <button>Faça seu cadastro aqui</button>
+                    <Link to={'./registro'}>
+                        <button>Faça seu cadastro aqui</button>
+                    </Link>
 
                 </div>
 

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './registro.sass'
+import { Link } from 'react-router'
 import freilogo from '../assets/freilogo.webp'
 import feiralogo from '../assets/feiralogo.webp'
 import Facebook from '../assets/facebookLogo.png'
@@ -7,17 +8,19 @@ import Instagram from '../assets/InstagramLogo.png'
 import Chrome from '../assets/ChromeLogo.png'
 import LinkedIn from '../assets/LinkedInLogo.png'
 
-function registro() {
+function Registro() {
   return (
     <>
         <div className='container-registro'>
 
             <div className='cabecalho'>
 
-                <img 
-                    src={freilogo}
-                    height='50px'
-                />
+                <Link to={'..'}>
+                    <img 
+                        src={freilogo}
+                        height='50px'
+                    />
+                </Link>
 
                 <h2>5° Edição</h2>
                 <h2>Feira de Profissões</h2>
@@ -64,4 +67,4 @@ function registro() {
   )
 }
 
-export default registro
+export default Registro
